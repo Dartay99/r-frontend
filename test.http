@@ -1,6 +1,26 @@
-GET https://fakestoreapi.com/products/1 HTTP/1.1
+###GET PRODUCTS
+GET http://127.0.0.1:3000/products HTTP/1.1
 
-###GET ALL PRODUCTS
-GET https://fakestoreapi.com/products HTTP/1.1
+###GET PRODUCT
+GET http://127.0.0.1:3000/products/1 HTTP/1.1
 
 
+###POST PRODUCT
+POST http://127.0.0.1:3000/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Product 4"  
+}
+
+###delete
+DELETE http://127.0.0.1:3000/products/4 HTTP/1.1
+
+###PUT PRODUCT
+PUT http://127.0.0.1:3000/products/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":4,
+    "title": "Product 4"  
+}
